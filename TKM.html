@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ThatKidMick</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    color: white;
+  }
+
+  .landing {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .landing img {
+    position: relative;
+    max-height: 80vh;
+    max-width: 90vw;
+    z-index: 1;
+    border: 5px solid purple;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    pointer-events: none;
+  }
+
+  .menu a {
+    color: yellow;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+    pointer-events: all;
+  }
+
+  .menu a:hover {
+    color: red;
+  }
+
+  .menu-top, .menu-bottom {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  section {
+    padding: 50px;
+    border: 2px solid purple;
+    margin: 20px;
+    border-radius: 10px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid purple;
+  }
+
+  .socials a {
+    margin: 0 10px;
+    color: yellow;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+
+  .socials a:hover {
+    color: red;
+  }
+
+  input, textarea, button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  button {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: red;
+  }
+</style>
+</head>
+<body>
+
+<div class="landing">
+  <img src="your-photo.jpg" alt="ThatKidMick">
+  <div class="menu">
+    <div class="menu-top">
+      <a href="#about">About</a>
+      <a href="#team">Meet The Team</a>
+    </div>
+    <div class="menu-bottom">
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</div>
+
+<section id="about">
+  <h2>About</h2>
+  <p>ThatKidMick is an artist dedicated to making meaningful music, building community, and inspiring people everywhere. More info coming soon!</p>
+</section>
+
+<section id="team">
+  <h2>Meet The Team</h2>
+  <p>Placeholder: Team member names and roles go here.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact (For The Family)</h2>
+  <form>
+    <input type="text" name="name" placeholder="Your Name">
+    <input type="email" name="email" placeholder="Your Email">
+    <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<footer>
+  <p>Follow ThatKidMick</p>
+  <div class="socials">
+    <a href="https://instagram.com/thatkidmick" target="_blank">Instagram</a>
+    <a href="https://snapchat.com/add/thattkidmick" target="_blank">Snapchat</a>
+    <a href="https://youtube.com/thatkidmick" target="_blank">YouTube</a>
+    <a href="https://twitter.com/thatkidmick" target="_blank">Twitter</a>
+  </div>
+  <p>&copy; 2025 ThatKidMick. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
